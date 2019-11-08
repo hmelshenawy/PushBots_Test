@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "39091934242",
+    "firebase_url": "https://pushbotstest-4159e.firebaseio.com",
+    "project_id": "pushbotstest-4159e",
+    "storage_bucket": "pushbotstest-4159e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39091934242:android:9c993562ab1569ae22267b",
+        "android_client_info": {
+          "package_name": "com.haitham.pushbots_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "39091934242-0uo2u7v7ehs2v2c0liivkkl1pli1hgqr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.haitham.pushbots_test",
+            "certificate_hash": "bd39466063ae0603fc495099845e36a11d71939b"
+          }
+        },
+        {
+          "client_id": "39091934242-6m8hn85rcn20ufs58eu098k5fjrtn7rs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9_zcS4trMr4788KtXgA4UKcF0KqLpOoA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "39091934242-6m8hn85rcn20ufs58eu098k5fjrtn7rs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
