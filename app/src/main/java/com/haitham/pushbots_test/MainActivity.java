@@ -27,10 +27,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // intiallize retrofit object
 
         Retrofit retrofit = new Retrofit.Builder().baseUrl(baseURL)
                 .addConverterFactory(GsonConverterFactory.create()).build();
         final restAPI restAPI = retrofit.create(restAPI.class);
+
+        // intiallize firebase instanceid to get current token
 
         FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
             @Override
@@ -43,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
                     System.out.println(TAG + " current token is: " + token);
 
                     System.out.println("task id is: " + task.getResult().getId());
+
+                    // to enqueue a retorfit call to get the message
 
                     Call<Token> call = restAPI.postToken(new Token(token));
 

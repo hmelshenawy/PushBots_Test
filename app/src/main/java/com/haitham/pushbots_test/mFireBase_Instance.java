@@ -14,6 +14,8 @@ public class mFireBase_Instance extends FirebaseMessagingService {
 
         super.onNewToken(token);
 
+        // this method will be called automatically when the android creat the token for the first time
+
         Log.d(TAG, "Refreshed token: " + token);
         System.out.println("token" + token);
 
@@ -23,6 +25,8 @@ public class mFireBase_Instance extends FirebaseMessagingService {
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
         super.onMessageReceived(remoteMessage);
+
+        // this method will be called when receiving a message for the server
 
         if (remoteMessage.getNotification() != null) {
             Log.d(TAG, "Message Notification Body: " + remoteMessage.getNotification().getBody());
